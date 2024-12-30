@@ -1,20 +1,36 @@
 import { BlogPosts } from 'app/components/posts'
+import { Projects } from './components/projects'
+
+const Divider = () => <div className="w-full border-b border-gray-500/30 my-4"></div>
 
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+      <h1 className="sr-only">About Tony Keiser</h1>
+      <p className="mb-4 text-lg">
+        Hey — I'm Tony Keiser, a former general contractor and oilfield worker turned software engineer. Specializing in
+        creating tools in my free time that optimize workflows for the construction and oilfield sectors, leveraging
+        hands-on experience to build practical solutions for real-world challenges.
       </p>
+
+      <Divider />
+
+      <h2 className="font-bold text-lg mb-2">Getting Personal</h2>
+      <p className="mb-4 text-lg">
+        I'm a father of 2 amazing boys. I'm an avid fitness entusiast and gamer{' '}
+        <span className="text-neutral-500">(StarCraft 2 usually)</span>.
+      </p>
+
+      <p className="text-neutral-500">Based in Los Angelese, California</p>
       <div className="my-8">
         <BlogPosts />
+      </div>
+
+      <Divider />
+
+      <h2 className="font-bold text-lg mb-4">Projects</h2>
+      <div className="mb-8">
+        <Projects />
       </div>
     </section>
   )
