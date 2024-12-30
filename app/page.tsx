@@ -21,7 +21,7 @@ export default function Page() {
         <span className="text-neutral-500">(StarCraft 2 usually)</span>.
       </p>
 
-      <p className="text-neutral-500">Based in Los Angelese, California</p>
+      <p className="text-neutral-500">Based in Los Angeles, California</p>
       <div className="my-8">
         <BlogPosts />
       </div>
